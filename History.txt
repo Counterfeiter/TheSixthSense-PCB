@@ -1,0 +1,8 @@
+﻿History
+--------
+V1.0
+-inital Board
+
+V1.1
+- Motor FET 5 & 6 nicht verbunden
+- I2C Master an Port C gewechselt. Port D nur I2c Slave!
