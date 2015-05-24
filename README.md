@@ -15,3 +15,12 @@ Included
 - schematic
 - PCB design
 - Images
+
+Schematic:
+--------------
+![Schematic](/Images/Schematic.png)
+
+
+Board design:
+--------------
+![Board](/Images/Board.png)
