@@ -6361,11 +6361,9 @@ Source: http://onsemi.com .. MBR0520LT1-D.pdf</description>
 <text x="292.1" y="17.78" size="2.54" layer="94">Designed by</text>
 <text x="292.1" y="10.16" size="2.54" layer="94">Sebastian Förster</text>
 <text x="173.736" y="146.558" size="1.778" layer="97" rot="R270">green</text>
-<text x="345.44" y="20.32" size="2.54" layer="94">v1.1</text>
+<text x="345.44" y="20.32" size="2.54" layer="94">v1.2</text>
 <text x="104.14" y="40.64" size="1.778" layer="104">MCP73831T-2DCI/OT</text>
 <text x="322.58" y="35.56" size="1.778" layer="104">LSM303D</text>
-<text x="170.18" y="104.14" size="2.1844" layer="104">Motor 5 &amp; 6 FETs are not connected to the µC because of a design bug with I2C lines.</text>
-<text x="170.18" y="99.06" size="2.1844" layer="104">Feel free to connect them and do a Software PWM to support 8 drivers.</text>
 <text x="142.24" y="172.72" size="2.1844" layer="104">(I2C Slave only on this Pins!)</text>
 </plain>
 <instances>
@@ -6379,10 +6377,13 @@ Source: http://onsemi.com .. MBR0520LT1-D.pdf</description>
 <instance part="Q1" gate="G$1" x="231.14" y="66.04"/>
 <instance part="GND5" gate="1" x="233.68" y="17.78" rot="MR0"/>
 <instance part="R8" gate="G$1" x="226.06" y="73.66" rot="MR180"/>
-<instance part="R16" gate="G$1" x="172.72" y="160.02" rot="R270"/>
+<instance part="R16" gate="G$1" x="172.72" y="160.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="174.2186" y="163.83" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="177.038" y="163.83" size="1.778" layer="96" rot="R270"/>
+</instance>
 <instance part="U6" gate="G$1" x="172.72" y="149.86" smashed="yes">
 <attribute name="NAME" x="176.276" y="150.368" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="168.275" y="137.668" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="178.435" y="135.128" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SJ2" gate="1" x="58.42" y="228.6" rot="R180"/>
 <instance part="GND6" gate="1" x="172.72" y="139.7"/>
@@ -7405,6 +7406,11 @@ Source: http://onsemi.com .. MBR0520LT1-D.pdf</description>
 <junction x="175.26" y="132.08"/>
 <label x="162.814" y="133.096" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PC7"/>
+<wire x1="139.7" y1="180.34" x2="157.48" y2="180.34" width="0.1524" layer="91"/>
+<label x="157.48" y="180.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$32" class="0">
 <segment>
@@ -7442,6 +7448,11 @@ Source: http://onsemi.com .. MBR0520LT1-D.pdf</description>
 <wire x1="231.14" y1="132.08" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
 <junction x="231.14" y="132.08"/>
 <label x="217.678" y="133.35" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PC6"/>
+<wire x1="139.7" y1="182.88" x2="157.48" y2="182.88" width="0.1524" layer="91"/>
+<label x="157.48" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$43" class="0">
